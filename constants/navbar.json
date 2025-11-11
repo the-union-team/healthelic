@@ -1,0 +1,335 @@
+{
+  "logo": {
+    "text": "HealthElic",
+    "href": "/"
+  },
+  "navItems": [
+    {
+      "label": "Features",
+      "href": "#features",
+      "type": "dropdown",
+      "featured": {
+        "title": "Features that transform healthcare",
+        "description": "Discover powerful tools designed to enhance patient care and streamline operations",
+        "cta": {
+          "label": "Explore Features →",
+          "href": "#features"
+        }
+      },
+      "columns": [
+        {
+          "label": "Core Features",
+          "items": [
+            {
+              "label": "Key Capabilities",
+              "href": "#features",
+              "description": "Comprehensive feature set for modern healthcare"
+            },
+            {
+              "label": "Quick Preview",
+              "href": "#features-overview",
+              "description": "See what HealthElic can do for you"
+            },
+            {
+              "label": "Analytics Dashboard",
+              "href": "#analytics",
+              "description": "Real-time insights and reporting"
+            }
+          ]
+        },
+        {
+          "label": "Integration",
+          "items": [
+            {
+              "label": "EHR Integration",
+              "href": "#ehr",
+              "description": "Seamless electronic health records"
+            },
+            {
+              "label": "API Access",
+              "href": "#api",
+              "description": "Connect with your existing systems"
+            }
+          ]
+        },
+        {
+          "label": "Security",
+          "items": [
+            {
+              "label": "HIPAA Compliance",
+              "href": "#hipaa",
+              "description": "Enterprise-grade security standards"
+            },
+            {
+              "label": "Data Encryption",
+              "href": "#encryption",
+              "description": "Protect sensitive patient information"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "How It Works",
+      "href": "#how-it-works",
+      "type": "link"
+    },
+    {
+      "label": "Pricing",
+      "href": "#pricing",
+      "type": "link"
+    },
+    {
+      "label": "For Physicians",
+      "href": "#physicians",
+      "type": "dropdown",
+      "featured": {
+        "title": "Solutions that drive healthcare results",
+        "description": "Deliver patient value and drive better health outcomes",
+        "cta": {
+          "label": "HealthElic Solutions →",
+          "href": "#solutions"
+        }
+      },
+      "columns": [
+        {
+          "label": "By Specialty",
+          "items": [
+            {
+              "label": "Cardiology",
+              "href": "#cardiology",
+              "description": "Advanced cardiac care solutions"
+            },
+            {
+              "label": "Primary Care",
+              "href": "#primary-care",
+              "description": "Comprehensive primary healthcare tools"
+            },
+            {
+              "label": "Emergency Medicine",
+              "href": "#emergency-medicine",
+              "description": "Rapid response and critical care"
+            },
+            {
+              "label": "Pediatrics",
+              "href": "#pediatrics",
+              "description": "Specialized care for children"
+            },
+            {
+              "label": "Other Specialties",
+              "href": "#specialties",
+              "description": "Solutions for all medical fields"
+            }
+          ]
+        },
+        {
+          "label": "By Use Case",
+          "items": [
+            {
+              "label": "Emergency",
+              "href": "#emergency",
+              "description": "Critical care when it matters most"
+            },
+            {
+              "label": "Clinic",
+              "href": "#clinic",
+              "description": "Streamline daily operations"
+            },
+            {
+              "label": "Research",
+              "href": "#research",
+              "description": "Advanced analytics for medical research"
+            },
+            {
+              "label": "Telemedicine",
+              "href": "#telemedicine",
+              "description": "Remote patient care solutions"
+            }
+          ]
+        },
+        {
+          "label": "By Practice",
+          "items": [
+            {
+              "label": "Solo Practice",
+              "href": "#solo",
+              "description": "Tools for independent physicians"
+            },
+            {
+              "label": "Group Practice",
+              "href": "#group",
+              "description": "Collaborative care management"
+            },
+            {
+              "label": "Hospital",
+              "href": "#hospital",
+              "description": "Enterprise healthcare solutions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "href": "#resources",
+      "type": "dropdown",
+      "featured": {
+        "title": "Resources to support your journey",
+        "description": "Access guides, insights, and support to maximize your HealthElic experience",
+        "cta": {
+          "label": "View All Resources →",
+          "href": "#resources"
+        }
+      },
+      "columns": [
+        {
+          "label": "Learn",
+          "items": [
+            {
+              "label": "Blog",
+              "href": "#blog",
+              "description": "Latest insights and healthcare trends"
+            },
+            {
+              "label": "Case Studies",
+              "href": "#case-studies",
+              "description": "Real-world success stories"
+            },
+            {
+              "label": "Clinical Validation",
+              "href": "#clinical-validation",
+              "description": "Evidence-based research and studies"
+            }
+          ]
+        },
+        {
+          "label": "Support",
+          "items": [
+            {
+              "label": "Help Center",
+              "href": "#help-center",
+              "description": "Comprehensive guides and tutorials"
+            },
+            {
+              "label": "FAQs",
+              "href": "#faqs",
+              "description": "Answers to common questions"
+            },
+            {
+              "label": "Documentation",
+              "href": "#docs",
+              "description": "Technical documentation and API reference"
+            }
+          ]
+        },
+        {
+          "label": "Community",
+          "items": [
+            {
+              "label": "Webinars",
+              "href": "#webinars",
+              "description": "Live training and expert sessions"
+            },
+            {
+              "label": "Events",
+              "href": "#events",
+              "description": "Conferences and networking opportunities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "#about",
+      "type": "dropdown",
+      "featured": {
+        "title": "Building the future of healthcare",
+        "description": "Learn about our mission, team, and commitment to transforming patient care",
+        "cta": {
+          "label": "Learn More →",
+          "href": "#about"
+        }
+      },
+      "columns": [
+        {
+          "label": "Company",
+          "items": [
+            {
+              "label": "Mission",
+              "href": "#mission",
+              "description": "Our vision for healthcare transformation"
+            },
+            {
+              "label": "Team",
+              "href": "#team",
+              "description": "Meet the people behind HealthElic"
+            },
+            {
+              "label": "Careers",
+              "href": "#careers",
+              "description": "Join us in revolutionizing healthcare"
+            }
+          ]
+        },
+        {
+          "label": "Expertise",
+          "items": [
+            {
+              "label": "Medical Advisory Board",
+              "href": "#advisory-board",
+              "description": "Leading healthcare experts guiding our mission"
+            },
+            {
+              "label": "Partners",
+              "href": "#partners",
+              "description": "Trusted healthcare organizations"
+            }
+          ]
+        },
+        {
+          "label": "Connect",
+          "items": [
+            {
+              "label": "Contact",
+              "href": "#contact",
+              "description": "Get in touch with our team"
+            },
+            {
+              "label": "Press",
+              "href": "#press",
+              "description": "Media resources and news"
+            },
+            {
+              "label": "Newsletter",
+              "href": "#newsletter",
+              "description": "Stay updated with latest news"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "label": "Login",
+      "href": "#login",
+      "type": "link",
+      "hiddenOnMobile": true
+    },
+    {
+      "label": "Contact sales",
+      "href": "#contact-sales",
+      "type": "button",
+      "variant": "outline",
+      "hiddenOnMobile": true
+    },
+    {
+      "label": "Get started",
+      "href": "#get-started",
+      "type": "button",
+      "variant": "primary"
+    }
+  ]
+}
+
