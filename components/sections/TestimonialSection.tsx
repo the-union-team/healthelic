@@ -68,7 +68,6 @@ export default function TestimonialSection() {
                                 <div className="relative flex-shrink-0">
                                     <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-[1.5px] border-cyan-500 p-[1.5px]">
                                         <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-                                            {/* Placeholder for profile picture - replace with actual image */}
                                             <div className="w-full h-full bg-gray-100 flex items-center justify-center">
                                                 <svg
                                                     className="w-10 h-10 sm:w-12 sm:h-12 text-gray-400"

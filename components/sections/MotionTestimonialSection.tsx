@@ -14,19 +14,16 @@ const testimonials: Testimonial[] = [
         name: 'Dr. David Truong, MD',
         title: 'Chief Medical Officer, Healthelic',
         quote: 'Motion has transformed how we approach healthcare technology. The AI workforce understands the full context of our business, making it feel like we have a team of expert physicians working alongside us 24/7. The precision and depth of knowledge is truly remarkable.',
-        image: '/placeholder-doctor-1.jpg',
     },
     {
         name: 'Sarah Chen, PhD',
         title: 'Director of AI Research, HealthTech Innovations',
         quote: 'Working with Motion\'s AI employees has been a game-changer. They don\'t just respond—they reason, learn, and adapt to our specific needs. The full business context integration means every interaction is informed and relevant.',
-        image: '/placeholder-doctor-2.jpg',
     },
     {
         name: 'Michael Rodriguez, MD',
         title: 'Clinical Director, Advanced Care Systems',
         quote: 'The seamless integration of Motion\'s AI workforce into our daily operations has improved our efficiency dramatically. Having access to intelligent agents that understand our entire business context makes decision-making faster and more accurate.',
-        image: '/placeholder-doctor-3.jpg',
     },
 ];
 

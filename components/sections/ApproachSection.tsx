@@ -100,7 +100,7 @@ export default function ApproachSection() {
                         </a>
                     </div>
 
-                    {/* Right Side - Image Placeholder with Gradient Border */}
+                    {/* Right Side - Image with Gradient Border */}
                     <div className="relative">
                         <div className="relative rounded-lg overflow-hidden">
                             {/* Gradient Border on Top and Left */}
@@ -110,13 +110,12 @@ export default function ApproachSection() {
                                 {/* Left gradient border */}
                                 <div className="absolute top-0 left-0 bottom-0 w-[3px] bg-gradient-to-b from-purple-400 via-purple-500 to-blue-500"></div>
                             </div>
-                            {/* Image Container - Placeholder Image */}
+                            {/* Image Container */}
                             <div className="w-full h-[180px] sm:h-[280px] lg:h-[300px] rounded-lg ml-[3px] mt-[3px] overflow-hidden bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50 relative">
                                 {/* Simulated Image Content */}
                                 <div className="absolute inset-0 opacity-20">
                                     <div className="w-full h-full bg-gradient-to-br from-purple-100 via-blue-100 to-gray-200"></div>
                                 </div>
-                                {/* Placeholder Pattern */}
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="text-center p-6">
                                         {/* Simulated person/workspace silhouette */}

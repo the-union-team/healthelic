@@ -6,7 +6,6 @@ interface Testimonial {
     name: string;
     title: string;
     quote: string;
-    image: string; // placeholder for now
 }
 
 const testimonials: Testimonial[] = [
@@ -14,13 +13,11 @@ const testimonials: Testimonial[] = [
         name: 'Jou-Ju Lu, MD, FACP, FCCP',
         title: 'Medical Director',
         quote: '"As a Medical Director and health administrator, I believe this Physician AI will not be optional — it will be essential. It will improve outcomes, reduce costs, and support clinicians. What makes it especially powerful is how seamlessly it fits into natural conversations, adapting to both physicians and patients, guiding users efficiently toward a diagnosis and suggesting evidence-based treatments. Rarely have I seen technology so well-conceived and so transformative. For healthcare systems, it will be strategically necessary."',
-        image: '/placeholder-doctor-1.jpg',
     },
     {
         name: 'George Le',
         title: 'NP',
         quote: '"Medicus finished my progress note and my differential—while I got coffee." Fifteen years in practice, a decade building and battle-testing AI from the wards to the cloud; I\'ve used Gemini, GPT-4 plug-ins, even coded my own. Most tools flatten when the ground gets uneven. Medicus finally handled clinical messiness: broad differentials ranked by likelihood, nuanced by what matters for the actual patient—comorbidities, social realities, even out-of-pocket costs. For the first time, my documentation and decision-making felt truly supported, not replaced. This is the difference between practicing medicine and practicing checklists. Glued to UpToDate? That\'s the past.',
-        image: '/placeholder-doctor-2.jpg',
     },
 ];
 
@@ -81,7 +78,6 @@ export default function TestimonialSliderSection() {
                                         <div className="mb-5">
                                             <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full mx-auto overflow-hidden border-2 border-gray-200">
                                                 <div className="w-full h-full bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50 flex items-center justify-center">
-                                                    {/* Placeholder for doctor image */}
                                                     <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
                                                         <svg
                                                             className="w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 text-white"

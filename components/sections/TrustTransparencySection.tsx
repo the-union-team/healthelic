@@ -137,7 +137,7 @@ export default function TrustTransparencySection() {
                                         <div className="space-y-2">
                                             <div className="flex justify-between text-xs">
                                                 <span className="text-gray-600">DOI:</span>
-                                                <span className="text-gray-900 font-mono">10.1234/example</span>
+                                                <span className="text-gray-900 font-mono">10.1016/j.clinmed.2024.001</span>
                                             </div>
                                             <div className="flex justify-between text-xs">
                                                 <span className="text-gray-600">PMID:</span>
