@@ -1,4 +1,5 @@
 import HeroSection from '@/components/sections/HeroSection';
+import PartnersSection from '@/components/sections/PartnersSection';
 import OverviewSection from '@/components/sections/OverviewSection';
 import InsightsSection from '@/components/sections/InsightsSection';
 import ComparisonSection from '@/components/sections/ComparisonSection';
@@ -14,6 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <main>
         <HeroSection />
+        <PartnersSection />
         <OverviewSection />
         <InsightsSection />
         <ComparisonSection />
