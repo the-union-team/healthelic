@@ -13,17 +13,17 @@ const testimonials: Testimonial[] = [
     {
         name: 'Dr. David Truong, MD',
         title: 'Chief Medical Officer, Healthelic',
-        quote: 'Motion has transformed how we approach healthcare technology. The AI workforce understands the full context of our business, making it feel like we have a team of expert physicians working alongside us 24/7. The precision and depth of knowledge is truly remarkable.',
+        quote: 'HealthElic has transformed how we approach healthcare technology. The AI workforce understands the full context of our business, making it feel like we have a team of expert physicians working alongside us 24/7. The precision and depth of knowledge is truly remarkable.',
     },
     {
         name: 'Sarah Chen, PhD',
         title: 'Director of AI Research, HealthTech Innovations',
-        quote: 'Working with Motion\'s AI employees has been a game-changer. They don\'t just respond—they reason, learn, and adapt to our specific needs. The full business context integration means every interaction is informed and relevant.',
+        quote: 'Working with HealthElic\'s AI employees has been a game-changer. They don\'t just respond—they reason, learn, and adapt to our specific needs. The full business context integration means every interaction is informed and relevant.',
     },
     {
         name: 'Michael Rodriguez, MD',
         title: 'Clinical Director, Advanced Care Systems',
-        quote: 'The seamless integration of Motion\'s AI workforce into our daily operations has improved our efficiency dramatically. Having access to intelligent agents that understand our entire business context makes decision-making faster and more accurate.',
+        quote: 'The seamless integration of HealthElic\'s AI workforce into our daily operations has improved our efficiency dramatically. Having access to intelligent agents that understand our entire business context makes decision-making faster and more accurate.',
     },
 ];
 
@@ -55,7 +55,8 @@ export default function MotionTestimonialSection() {
                 {/* Section Header */}
                 <div className="text-center mb-12 lg:mb-16">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                        Why Motion Offers the Best AI Employees
+                        Why HealthElic Offers the Best AI Employees
+                        
                     </h2>
                     <p className="text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
                         World&apos;s first AI workforce at your fingertips. Powered by the full context of your business.

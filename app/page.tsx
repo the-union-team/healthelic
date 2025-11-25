@@ -1,14 +1,13 @@
-import HeroSection from '@/components/sections/HeroSection';
-import PartnersSection from '@/components/sections/PartnersSection';
-import OverviewSection from '@/components/sections/OverviewSection';
-import InsightsSection from '@/components/sections/InsightsSection';
-import ComparisonSection from '@/components/sections/ComparisonSection';
-import TestimonialSection from '@/components/sections/TestimonialSection';
-import ApproachSection from '@/components/sections/ApproachSection';
-import TestimonialSliderSection from '@/components/sections/TestimonialSliderSection';
-import MotionTestimonialSection from '@/components/sections/MotionTestimonialSection';
-import TrustTransparencySection from '@/components/sections/TrustTransparencySection';
 import Footer from '@/components/layout/Footer';
+import ApproachSection from '@/components/sections/ApproachSection';
+import ComparisonSection from '@/components/sections/ComparisonSection';
+import HeroSection from '@/components/sections/HeroSection';
+import InsightsSection from '@/components/sections/InsightsSection';
+import MotionTestimonialSection from '@/components/sections/MotionTestimonialSection';
+import OverviewSection from '@/components/sections/OverviewSection';
+import PartnersSection from '@/components/sections/PartnersSection';
+import TestimonialSection from '@/components/sections/TestimonialSection';
+import TrustTransparencySection from '@/components/sections/TrustTransparencySection';
 
 export default function Home() {
   return (

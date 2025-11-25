@@ -6,64 +6,64 @@
   "navItems": [
     {
       "label": "Features",
-      "href": "#features",
+      "href": "/features",
       "type": "dropdown",
       "featured": {
         "title": "Features that transform healthcare",
         "description": "Discover powerful tools designed to enhance patient care and streamline operations",
         "cta": {
           "label": "Explore Features →",
-          "href": "#features"
+          "href": "/features"
         }
       },
       "columns": [
         {
-          "label": "Core Features",
+          "label": "Medicus Features",
           "items": [
             {
-              "label": "Key Capabilities",
-              "href": "#features",
-              "description": "Comprehensive feature set for modern healthcare"
+              "label": "Medicus Features",
+              "href": "/features#medicus-features",
+              "description": "Discover what makes Medicus the most advanced agentic health intelligence system ever built."
             },
             {
-              "label": "Quick Preview",
-              "href": "#features-overview",
-              "description": "See what HealthElic can do for you"
+              "label": "Clinical Reasoning Engine",
+              "href": "/features#clinical-reasoning",
+              "description": "Medicus interprets and explains medical evidence — not just retrieves it — using a reasoning model co-developed with physicians."
             },
             {
-              "label": "Analytics Dashboard",
-              "href": "#analytics",
-              "description": "Real-time insights and reporting"
+              "label": "Personalized Health Context",
+              "href": "/features#personalized-context",
+              "description": "Each response is dynamically tailored to a patient's symptoms, history, and care pathway."
             }
           ]
         },
         {
-          "label": "Integration",
+          "label": "Intelligence & Evidence",
           "items": [
             {
-              "label": "EHR Integration",
-              "href": "#ehr",
-              "description": "Seamless electronic health records"
+              "label": "Evidence-Based Explanations",
+              "href": "/features#evidence-based",
+              "description": "Every output is backed by validated research and peer-reviewed data with transparent citations."
             },
             {
-              "label": "API Access",
-              "href": "#api",
-              "description": "Connect with your existing systems"
+              "label": "AI-Driven Action Plans",
+              "href": "/features#ai-action-plans",
+              "description": "Medicus doesn't stop at insight. It automates scheduling, summarization, and follow-up workflows."
+            },
+            {
+              "label": "Continuous Learning",
+              "href": "/features#continuous-learning",
+              "description": "Every physician interaction improves Medicus' accuracy, context, and reasoning depth."
             }
           ]
         },
         {
-          "label": "Security",
+          "label": "Security & Compliance",
           "items": [
             {
-              "label": "HIPAA Compliance",
-              "href": "#hipaa",
-              "description": "Enterprise-grade security standards"
-            },
-            {
-              "label": "Data Encryption",
-              "href": "#encryption",
-              "description": "Protect sensitive patient information"
+              "label": "Privacy and Compliance",
+              "href": "/features#privacy-compliance",
+              "description": "HIPAA-grade encryption and security standards ensure all data remains protected."
             }
           ]
         }
@@ -71,17 +71,17 @@
     },
     {
       "label": "How It Works",
-      "href": "#how-it-works",
+      "href": "/how-it-works",
       "type": "link"
     },
     {
       "label": "Pricing",
-      "href": "#pricing",
+      "href": "/pricing",
       "type": "link"
     },
     {
       "label": "For Physicians",
-      "href": "#physicians",
+      "href": "/physicians",
       "type": "dropdown",
       "featured": {
         "title": "Solutions that drive healthcare results",

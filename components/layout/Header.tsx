@@ -33,6 +33,7 @@ export default function Header() {
                       <Dropdown
                         key={idx}
                         label={item.label}
+                        href={item.href}
                         featured={item.featured}
                         columns={item.columns}
                         items={item.items}
