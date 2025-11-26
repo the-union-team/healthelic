@@ -1,6 +1,6 @@
 export default function PricingHero() {
   return (
-    <section className="min-h-[calc(100vh-8rem)] bg-white pb-10 relative overflow-hidden">
+    <section className="min-h-[calc(100vh-8rem)] bg-white pb-10 relative overflow-hidden flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center pt-8 lg:pt-16 pb-12 lg:pb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">

@@ -2,6 +2,7 @@
 
 import Footer from '@/components/layout/Footer';
 import PricingHero from '@/components/sections/pricing/PricingHero';
+import PricingHeroSection from '@/components/sections/pricing/PricingHeroSection';
 import PricingCard from '@/components/sections/pricing/PricingCard';
 
 export default function PricingPage() {
@@ -30,6 +31,9 @@ export default function PricingPage() {
     <div className="min-h-screen bg-white">
       <main>
         <PricingHero />
+        
+        {/* Hero Section with Monitor */}
+        <PricingHeroSection />
 
         {/* Pricing Section */}
         <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-purple-50">
