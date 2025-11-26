@@ -302,7 +302,7 @@ function ProductAnalyticsDashboard() {
             <div
               key={i}
               className="flex-1 bg-blue-600 rounded-t"
-              style={{ height: `${height}%` }}
+              style={{ height: `63%` }}
             />
           );
         })}
@@ -450,7 +450,7 @@ function WebAnalyticsDashboard() {
                 <div
                   key={i}
                   className="flex-1 bg-blue-600 rounded-t"
-                  style={{ height: `${height}%` }}
+                  style={{ height: `63%` }}
                 />
               );
             })}

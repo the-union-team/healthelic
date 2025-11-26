@@ -20,7 +20,7 @@ export default function Home() {
         <ComparisonSection />
         <TestimonialSection />
         <ApproachSection />
-        {/* <TestimonialSliderSection /> */}
+       
         <MotionTestimonialSection />
         <TrustTransparencySection />
       </main>
