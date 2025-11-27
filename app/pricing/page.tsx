@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import PricingHero from '@/components/sections/pricing/PricingHero';
 import PricingHeroSection from '@/components/sections/pricing/PricingHeroSection';
 import PricingCard from '@/components/sections/pricing/PricingCard';
+import Button from '@/components/ui/Button';
 
 export default function PricingPage() {
   const pricingPlans = [
@@ -36,14 +37,22 @@ export default function PricingPage() {
         <PricingHeroSection />
 
         {/* Pricing Section */}
-        <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-purple-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
+          {/* Animated background */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Section Header */}
             <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                For Individuals
+              <h2 className="section-title text-gray-900 mb-4">
+                <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                  For Individuals
+                </span>
               </h2>
-              <p className="text-gray-700 text-base sm:text-lg max-w-2xl mx-auto">
+              <p className="body text-gray-700 max-w-2xl mx-auto">
                 Start your journey with HealthElic today. No credit card required.
               </p>
             </div>
@@ -66,34 +75,57 @@ export default function PricingPage() {
 
             {/* Additional Info */}
             <div className="mt-16 text-center">
-              <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 lg:p-10 max-w-4xl mx-auto">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-                  Questions about pricing?
-                </h3>
-                <p className="text-gray-700 text-base sm:text-lg mb-6">
-                  Our team is here to help you find the right plan for your needs. Contact us for more information about enterprise plans and custom solutions.
-                </p>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Contact Sales
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
+              <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-200 p-8 lg:p-10 max-w-4xl mx-auto hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                {/* Animated background */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                </div>
+                <div className="relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h3 className="subsection-title text-gray-900 mb-4">
+                    Questions about pricing?
+                  </h3>
+                  <p className="body text-gray-700 mb-6">
+                    Our team is here to help you find the right plan for your needs. Contact us for more information about enterprise plans and custom solutions.
+                  </p>
+                  <Button
+                    href="/contact"
+                    variant="primary"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  >
+                    Contact Sales
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 lg:py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Enhanced FAQ Section */}
+        <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-purple-50 relative overflow-hidden">
+          {/* Animated background */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+          </div>
+
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Frequently Asked Questions
+              <h2 className="section-title text-gray-900 mb-4">
+                <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                  Frequently Asked Questions
+                </span>
               </h2>
+              <p className="body text-gray-600 max-w-2xl mx-auto">
+                Everything you need to know about our pricing and plans
+              </p>
             </div>
             <div className="space-y-6">
               {[
@@ -116,10 +148,21 @@ export default function PricingPage() {
               ].map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-purple-300 transition-colors"
+                  className="bg-white rounded-xl p-6 border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 group"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="card-title text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                        {faq.question}
+                      </h3>
+                      <p className="body-small text-gray-700">{faq.answer}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -131,4 +174,3 @@ export default function PricingPage() {
     </div>
   );
 }
-

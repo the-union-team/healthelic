@@ -5,6 +5,7 @@ import ResourcesHero from '@/components/sections/resources/ResourcesHero';
 import ResourceCard from '@/components/sections/resources/ResourceCard';
 import SpotlightSection from '@/components/sections/resources/SpotlightSection';
 import FeaturedResources from '@/components/sections/resources/FeaturedResources';
+import Button from '@/components/ui/Button';
 
 export default function ResourcesPage() {
   const resources = [
@@ -58,6 +59,14 @@ export default function ResourcesPage() {
         {/* Resources Grid */}
         <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-purple-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="section-title text-gray-900 mb-4">
+                Explore Resources
+              </h2>
+              <p className="body text-gray-600 max-w-2xl mx-auto">
+                Discover comprehensive guides, insights, and tools to help you get the most out of HealthElic
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {resources.map((resource, index) => (
                 <ResourceCard
@@ -79,25 +88,52 @@ export default function ResourcesPage() {
         {/* Featured Resources */}
         <FeaturedResources />
 
-        {/* Newsletter Section */}
+        {/* Enhanced Newsletter Section */}
         <section className="py-16 lg:py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 rounded-2xl p-8 lg:p-12 border border-purple-100 shadow-xl text-center">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Stay Updated
-              </h2>
-              <p className="text-gray-700 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                Subscribe to our newsletter to receive the latest resources, updates, and insights directly in your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                />
-                <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
-                  Subscribe
-                </button>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 rounded-2xl shadow-lg border border-purple-200 p-8 lg:p-12 hover:shadow-xl transition-all duration-300">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  {/* Left Side - Content */}
+                  <div className="text-center md:text-left">
+                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <h2 className="section-title text-gray-900 mb-4">
+                      Stay Updated
+                    </h2>
+                    <p className="body text-gray-700 mb-6">
+                      Subscribe to our newsletter to receive the latest resources, updates, and insights directly in your inbox.
+                    </p>
+                  </div>
+
+                  {/* Right Side - Form */}
+                  <div className="relative">
+                    {/* Animated background */}
+                    <div className="absolute inset-0 overflow-hidden rounded-lg">
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-gradient-to-br from-purple-200 to-blue-200 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+                    </div>
+                    <div className="relative z-10 space-y-4">
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white/90 backdrop-blur-sm"
+                      />
+                      <Button
+                        href="#subscribe"
+                        variant="primary"
+                        className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      >
+                        Subscribe
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

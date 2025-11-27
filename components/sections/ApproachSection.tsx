@@ -34,13 +34,13 @@ export default function ApproachSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="text-center mb-8 lg:mb-10">
-                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+                    <h2 className="section-title text-gray-900 mb-3">
                         Our Approach — Building an{' '}
                         <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                             Ecosystem of Intelligent Care
                         </span>
                     </h2>
-                    <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                    <p className="body text-gray-700 max-w-2xl mx-auto">
                         Healthelic is more than a product — it&apos;s a full ecosystem of AI agents designed to transform healthcare at every level.
                     </p>
                 </div>

@@ -49,10 +49,10 @@ export default function ResourceCard({ title, description, icon, index, href = '
         <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+        <h3 className="card-title text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-700 leading-relaxed text-sm sm:text-base flex-grow">
+        <p className="body-small text-gray-700 flex-grow">
           {description}
         </p>
         <div className="mt-6 flex items-center gap-2 text-purple-600 font-semibold text-sm group-hover:gap-3 transition-all">
@@ -65,4 +65,5 @@ export default function ResourceCard({ title, description, icon, index, href = '
     </a>
   );
 }
+
 

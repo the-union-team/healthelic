@@ -80,10 +80,10 @@ export default function FeatureHighlight({ feature, index }: FeatureHighlightPro
             <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${colors.gradient} mb-6 shadow-lg`}>
               {feature.icon}
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+            <h2 className="subsection-title text-gray-900 mb-4">
               {feature.title}
             </h2>
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
+            <p className="body text-gray-700 max-w-2xl">
               {feature.description}
             </p>
           </div>
@@ -101,4 +101,5 @@ export default function FeatureHighlight({ feature, index }: FeatureHighlightPro
     </section>
   );
 }
+
 

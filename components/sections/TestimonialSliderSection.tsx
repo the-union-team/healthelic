@@ -48,7 +48,7 @@ export default function TestimonialSliderSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12 lg:mb-16">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    <h2 className="section-title text-gray-900 mb-4">
                         What Medical Experts Say <br />About{' '}
                         <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                             Healthelic

@@ -20,13 +20,13 @@ export default function FeatureContent({
       isVisible ? 'opacity-100 translate-x-0' : isLeft ? 'opacity-0 -translate-x-8' : 'opacity-0 translate-x-8'
     }`}>
       <div className="space-y-5 lg:space-y-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+        <h2 className="section-title">
           <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
             {title}
           </span>
         </h2>
         
-        <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
+        <p className="body text-gray-700 max-w-2xl">
           {description}
         </p>
 
@@ -39,4 +39,5 @@ export default function FeatureContent({
     </div>
   );
 }
+
 

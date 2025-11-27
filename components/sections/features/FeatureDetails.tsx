@@ -238,3 +238,4 @@ export function getFeatureDetails(featureId: string): JSX.Element | null {
   return details[featureId] || null;
 }
 
+

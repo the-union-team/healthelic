@@ -32,12 +32,12 @@ export default function PartnersSection() {
         <section className="bg-gray-100 py-12 sm:py-16 md:py-20 mb-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10 sm:mb-12 md:mb-16">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    <h3 className="section-title">
                         <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                             Trusted Partners
                         </span>
                     </h3>
-                    <p className="text-gray-700 text-lg sm:text-xl font-medium md:text-2xl leading-relaxed max-w-2xl mx-auto mt-4">
+                    <p className="body-large text-gray-700 font-medium max-w-2xl mx-auto mt-4">
                         We work with leading healthcare institutions and technology partners
                         to deliver exceptional care
                     </p>

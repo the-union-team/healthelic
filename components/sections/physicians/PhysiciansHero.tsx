@@ -1,38 +1,38 @@
+import Button from '@/components/ui/Button';
+
 export default function PhysiciansHero() {
   return (
     <section className="min-h-[calc(100vh-8rem)] bg-white pb-10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[60vh]">
           {/* Left Side - Text Content */}
-          <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-center lg:text-left relative z-10">
-            <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.2] sm:leading-tight">
+          <div className="space-y-4 sm:space-y-5 md:space-y-6 text-center lg:text-left">
+            <h1 className="hero-title">
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 Built for Doctors, by Doctors
               </span>
             </h1>
-
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              Medicus is designed to think the way clinicians do — but{" "}
+            <p className="body-large text-gray-700 max-w-2xl mx-auto lg:mx-0">
+              Medicus is designed to think the way clinicians do — but{' '}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">
                 faster and without fatigue.
               </span>
             </p>
-
-            <p className="text-sm sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="body text-gray-600 max-w-xl mx-auto lg:mx-0">
               Experience AI-powered clinical intelligence that understands your workflow, speaks your language, and enhances your practice.
             </p>
-
             {/* CTA Button */}
-            <div className="pt-4">
-              <a
+            <div className="pt-4 flex justify-center lg:justify-start">
+              <Button
                 href="#beta-signup"
-                className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg font-semibold text-sm sm:text-base hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                variant="primary"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Join the Medicus Beta for Physicians
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Button>
             </div>
           </div>
 
@@ -48,29 +48,21 @@ export default function PhysiciansHero() {
             {/* Central Icon - Medical/Doctor */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 animate-float-slow">
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64">
+                {/* Glowing background circle */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-blue-50 to-cyan-50 rounded-full blur-3xl opacity-60 animate-pulse"></div>
-                <div className="relative z-10 w-full h-full bg-gradient-to-br from-white via-purple-50 to-blue-50 rounded-full shadow-2xl border-2 border-purple-100 flex items-center justify-center">
-                  <svg
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 text-purple-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                    />
+                
+                {/* Main medical icon */}
+                <div className="relative z-10 w-full h-full bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-2xl border-4 border-white">
+                  <svg className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
-                  <div className="absolute inset-0 bg-purple-400 rounded-full animate-ping opacity-20"></div>
                 </div>
               </div>
             </div>
 
             {/* Feature Icons Floating Around */}
             {/* Data Summary Icon */}
-            <div className="absolute top-16 right-16 sm:top-20 sm:right-20 md:top-24 md:right-24 z-15 animate-float animation-delay-1000">
+            <div className="absolute top-16 right-16 sm:top-20 sm:right-20 md:top-24 md:right-24 z-15 animate-float">
               <div className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-purple-100 p-3 sm:p-4 group hover:scale-110 transition-all duration-300">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +74,7 @@ export default function PhysiciansHero() {
             </div>
 
             {/* Documentation Icon */}
-            <div className="absolute bottom-24 left-12 sm:bottom-28 sm:left-16 md:bottom-32 md:left-20 z-15 animate-float animation-delay-2000">
+            <div className="absolute bottom-16 left-16 sm:bottom-20 sm:left-20 md:bottom-24 md:left-24 z-15 animate-float animation-delay-2000">
               <div className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg border border-blue-100 p-3 sm:p-4 group hover:scale-110 transition-all duration-300">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,13 +110,11 @@ export default function PhysiciansHero() {
             </div>
 
             {/* Subtle floating particles */}
-            <div className="absolute top-1/3 right-8 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-40 animate-float animation-delay-3000"></div>
-            <div className="absolute bottom-1/3 left-8 w-2 h-2 bg-purple-400 rounded-full opacity-40 animate-float animation-delay-2000"></div>
-            <div className="absolute top-1/4 left-1/3 w-1 h-1 bg-cyan-400 rounded-full opacity-40 animate-float animation-delay-4000"></div>
+            <div className="absolute top-1/3 right-8 w-2 h-2 bg-blue-400 rounded-full opacity-40 animate-float animation-delay-3000"></div>
+            <div className="absolute bottom-1/3 left-8 w-2.5 h-2.5 bg-purple-400 rounded-full opacity-40 animate-float animation-delay-2000"></div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-

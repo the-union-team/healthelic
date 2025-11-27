@@ -107,7 +107,7 @@ export default function InsightsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section - Main Heading */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 className="section-title text-gray-900 mb-4">
             Meet Medicus — The Next Generation of{" "}
             <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               AI Health Intelligence
@@ -119,11 +119,11 @@ export default function InsightsSection() {
           {/* Left Side - Medicus Content */}
           <div className="space-y-6 lg:space-y-8">
             <div>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+              <p className="body text-gray-700 mb-6">
                 While most AI tools in healthcare can summarize data, Medicus
                 truly understands it.
               </p>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8">
+              <p className="body text-gray-700 mb-8">
                 It reasons like a clinician, assists like a colleague, and
                 learns continuously — becoming smarter with every interaction.
               </p>
@@ -131,7 +131,7 @@ export default function InsightsSection() {
 
             {/* What makes Medicus different */}
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="subsection-title text-gray-900 mb-6">
                 What makes Medicus different
               </h3>
 

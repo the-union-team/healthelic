@@ -8,12 +8,12 @@ export default function OverviewSection() {
           {/* Left Side - Text Content */}
           <div className="space-y-6 lg:space-y-8">
             {/* OVERVIEW Heading */}
-            <h2 className="text-sm sm:text-base font-bold text-gray-700 uppercase tracking-wider">
+            <h2 className="label text-gray-700">
               OVERVIEW
             </h2>
 
             {/* Main Title */}
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <h3 className="section-title">
               Say hello to the{" "}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 smarter, more human side
@@ -22,7 +22,7 @@ export default function OverviewSection() {
             </h3>
 
             {/* Paragraphs */}
-            <div className="space-y-4 text-gray-700 text-base sm:text-lg leading-relaxed">
+            <div className="space-y-4 text-gray-700 body">
               <p>
                 Healthelic builds intelligent clinical copilots that don&apos;t just
                 respond — they reason, act, and evolve.

@@ -6,14 +6,14 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-center lg:text-left">
-            <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.2] sm:leading-tight">
+            <h1 className="hero-title">
               Healthelic – Where Healthcare Meets{" "}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 AI Innovation
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+            <p className="body-large text-gray-700 max-w-xl mx-auto lg:mx-0 font-medium">
               Where AI Meets TLC —{" "}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 Technology, Learning, and Compassion
@@ -318,7 +318,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Medical Clipboard/Notes - Clinical Documentation */}
             <div className="absolute bottom-1/4 right-1/6 z-10 animate-float animation-delay-2600">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-br from-emerald-500/20 to-green-500/20 backdrop-blur-sm rounded-xl border border-emerald-200/50 flex items-center justify-center shadow-lg group hover:scale-110 transition-transform duration-300">
                 <svg

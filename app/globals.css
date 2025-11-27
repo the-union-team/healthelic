@@ -18,6 +18,52 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Typography Standardization */
+/* Hero H1 - Main page titles */
+.hero-title {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-tight;
+}
+
+/* Section H2 - Major section headings */
+.section-title {
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight;
+}
+
+/* Subsection H3 - Subsection headings */
+.subsection-title {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold leading-tight;
+}
+
+/* Card/Feature Title */
+.card-title {
+  @apply text-xl sm:text-2xl font-bold;
+}
+
+/* Body Large - Hero descriptions, important paragraphs */
+.body-large {
+  @apply text-lg sm:text-xl leading-relaxed;
+}
+
+/* Body - Standard paragraph text */
+.body {
+  @apply text-base sm:text-lg leading-relaxed;
+}
+
+/* Body Small - Secondary text, descriptions */
+.body-small {
+  @apply text-sm sm:text-base leading-relaxed;
+}
+
+/* Small Text - Labels, captions */
+.small-text {
+  @apply text-xs sm:text-sm;
+}
+
+/* Label - Section labels, badges */
+.label {
+  @apply text-xs sm:text-sm font-semibold uppercase tracking-wider;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

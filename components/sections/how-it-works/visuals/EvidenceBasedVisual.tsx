@@ -27,8 +27,8 @@ export default function EvidenceBasedVisual() {
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-gray-600 mt-2">
-                  <span className="px-2 py-0.5 bg-white rounded">DOI: 10.xxxx</span>
-                  <span className="px-2 py-0.5 bg-white rounded">PMID: xxxxxx</span>
+                  <span className="px-2 py-0.5 bg-white rounded">DOI: 10.1234/example</span>
+                  <span className="px-2 py-0.5 bg-white rounded">PMID: 12345678</span>
                 </div>
               </div>
             ))}
@@ -46,4 +46,3 @@ export default function EvidenceBasedVisual() {
     </div>
   );
 }
-

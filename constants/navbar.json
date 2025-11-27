@@ -241,7 +241,7 @@
     },
     {
       "label": "About",
-      "href": "#about",
+      "href": "/about",
       "type": "dropdown",
       "featured": {
         "title": "Building the future of healthcare",
@@ -292,7 +292,7 @@
           "items": [
             {
               "label": "Contact",
-              "href": "#contact",
+              "href": "/contact",
               "description": "Get in touch with our team"
             },
             {
@@ -319,7 +319,7 @@
     },
     {
       "label": "Contact sales",
-      "href": "#contact-sales",
+      "href": "/contact",
       "type": "button",
       "variant": "outline",
       "hiddenOnMobile": true

@@ -5,7 +5,7 @@ export default function FeaturesHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-16">
           {/* Left Side - Text Content */}
           <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-center lg:text-left relative z-10">
-            <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.2] sm:leading-tight">
+            <h1 className="hero-title">
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 Medicus Features
               </span>
@@ -15,7 +15,7 @@ export default function FeaturesHero() {
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+            <p className="body-large text-gray-700 max-w-xl mx-auto lg:mx-0 font-medium">
               Discover what makes Medicus the most advanced{" "}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">
                 agentic health intelligence system
@@ -23,7 +23,7 @@ export default function FeaturesHero() {
               ever built.
             </p>
 
-            <p className="text-sm sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="body text-gray-600 max-w-xl mx-auto lg:mx-0">
               From clinical reasoning to personalized care pathways, explore the powerful capabilities that transform how healthcare professionals deliver patient care.
             </p>
           </div>
@@ -215,4 +215,5 @@ export default function FeaturesHero() {
     </section>
   );
 }
+
 

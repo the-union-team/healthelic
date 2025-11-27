@@ -5,20 +5,20 @@ export default function HowItWorksHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 lg:pt-16">
           {/* Left Side - Text Content */}
           <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 text-center lg:text-left relative z-10">
-            <h1 className="text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-[1.2] sm:leading-tight">
+            <h1 className="hero-title">
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                 How HealthElic Works
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+            <p className="body-large text-gray-700 max-w-xl mx-auto lg:mx-0 font-medium">
               Our AI platform for physicians is trained and designed to respond in a custom, context‑appropriate, natural conversational style, so that a physician can just ask for help{" "}
               <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">
                 "like a real situation."
               </span>
             </p>
 
-            <p className="text-sm sm:text-base text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="body text-gray-600 max-w-xl mx-auto lg:mx-0">
               Experience intelligent healthcare assistance that understands context, provides evidence-based insights, and adapts to your clinical workflow seamlessly.
             </p>
           </div>
@@ -114,4 +114,5 @@ export default function HowItWorksHero() {
     </section>
   );
 }
+
 

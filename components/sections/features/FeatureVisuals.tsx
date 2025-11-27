@@ -150,8 +150,8 @@ export function getFeatureVisual(featureId: string): JSX.Element {
                     </div>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-gray-600">
-                    <span className="px-2 py-1 bg-white rounded">DOI: 10.xxxx/xxxx</span>
-                    <span className="px-2 py-1 bg-white rounded">PMID: xxxxxx</span>
+                    <span className="px-2 py-1 bg-white rounded">DOI: 10.1234/example</span>
+                    <span className="px-2 py-1 bg-white rounded">PMID: 12345678</span>
                   </div>
                 </div>
               ))}
@@ -287,4 +287,3 @@ export function getFeatureVisual(featureId: string): JSX.Element {
     </div>
   );
 }
-

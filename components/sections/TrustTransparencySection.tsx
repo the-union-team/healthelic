@@ -43,10 +43,10 @@ export default function TrustTransparencySection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12 lg:mb-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+                    <h2 className="section-title text-gray-900 mb-4">
                         Trust, Transparency, and Evidence
                     </h2>
-                    <p className="text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+                    <p className="body-large text-gray-700 max-w-3xl mx-auto">
                         How Healthelic Prevents AI Hallucination and Ensures Accuracy
                     </p>
                 </div>
@@ -200,7 +200,7 @@ export default function TrustTransparencySection() {
                         Try Healthelic for free
                     </Button>
                     <Button
-                        href="#contact-sales"
+                        href="/contact"
                         variant="outline"
                         className="w-full sm:w-auto px-8 py-3 border-gray-300 text-gray-700 hover:bg-gray-50"
                     >

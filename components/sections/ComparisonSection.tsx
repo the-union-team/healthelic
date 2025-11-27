@@ -62,13 +62,13 @@ export default function ComparisonSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="section-title text-gray-900 mb-6">
             Why Medicus Outperforms{" "}
             <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Conventional AI Tools
             </span>
           </h2>
-          <div className="max-w-3xl mx-auto space-y-4 text-gray-700 text-base sm:text-lg leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-4 text-gray-700 body">
             <p>
               Most AI in healthcare was built to{" "}
               <span className="font-semibold">search and summarize</span>.

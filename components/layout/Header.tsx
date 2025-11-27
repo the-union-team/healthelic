@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import navbarData from '@/constants/navbar.json';
 import Button from '@/components/ui/Button';
 import NavLink from '@/components/ui/NavLink';
@@ -9,13 +9,46 @@ import MobileMenuButton from '@/components/ui/MobileMenuButton';
 import Dropdown from './Dropdown';
 import MobileDropdown from './MobileDropdown';
 import type { NavItem } from '@/types/navbar.types';
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   const handleItemClick = () => {
     setMobileMenuOpen(false);
   };
+
+  // Close mobile menu when clicking outside or on route change
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setMobileMenuOpen(false);
+    };
+
+    // Close menu on window resize (if switching to desktop)
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <div className="sticky top-0 z-50 pt-4 px-4 sm:px-6 lg:px-8 max-w-[95%] mx-auto" id="navbar-container">
@@ -78,8 +111,9 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="lg:hidden border-t border-gray-200 py-4 animate-in slide-in-from-top duration-200">
+            <div className="lg:hidden border-t border-gray-200 py-4 animate-in slide-in-from-top duration-200 max-h-[calc(100vh-8rem)] overflow-y-auto">
               <div className="flex flex-col gap-3">
                 {(navbarData.navItems as NavItem[]).map((item, idx) => {
                   if (item.type === 'dropdown') {
@@ -95,19 +129,24 @@ export default function Header() {
                     );
                   }
                   return (
-                    <NavLink key={idx} href={item.href || '#'} onClick={handleItemClick}>
+                    <NavLink 
+                      key={idx} 
+                      href={item.href || '#'} 
+                      onClick={handleItemClick}
+                      className="block py-2"
+                    >
                       {item.label}
                     </NavLink>
                   );
                 })}
                 <div className="pt-4 border-t border-gray-200 flex flex-col gap-3 mt-2">
-                  {navbarData.actions.map((action, idx) => (
+                  {(navbarData.actions as NavItem[]).map((action, idx) => (
                     <Button
                       key={idx}
                       href={action.href || '#'}
                       variant={action.type === 'button' ? (action.variant === 'primary' ? 'primary' : 'outline') : 'link'}
                       onClick={handleItemClick}
-                      className={action.type === 'button' ? 'text-center' : ''}
+                      className={action.type === 'button' ? 'text-center w-full' : 'text-center'}
                     >
                       {action.label}
                     </Button>
