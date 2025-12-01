@@ -17,25 +17,24 @@ export default function TestimonialSection() {
                 {/* Testimonial Content - Matching Image Design */}
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-8 items-start">
-                        {/* Left Side - Quote Mark and Testimonial Text */}
+                        {/* Left Side - Testimonial Text */}
                         <div className="space-y-4 col-span-2">
-                            {/* Large Quote Mark - Top Left */}
-                            <div className="relative">
-                                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-none bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-                                    &ldquo;
-                                </div>
-                            </div>
-
                             {/* Main Testimonial Text */}
-                            <div className="space-y-3 -mt-4 sm:-mt-6 lg:-mt-8 leading-none">
+                            <div className="space-y-4 leading-none">
                                 <p className="text-gray-900 text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-normal">
                                     A <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">visionary physician-technologist</span>, Dr. Truong leads a diverse team of expert physicians — each distinguished in their own specialty — uniting <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">clinical mastery</span> with <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">advanced AI reasoning</span> to create technology that feels <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">human, safe, and precise</span>.
                                 </p>
                                 
                                 {/* Quote */}
-                                <p className="text-gray-900 text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-normal">
-                                    &ldquo;We&apos;re not replacing doctors — we&apos;re <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">amplifying their impact</span> through <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">intelligence that listens, learns, and supports</span>.&rdquo;
-                                </p>
+                                <div className="space-y-3">
+                                    <p className="text-gray-900 text-base sm:text-lg md:text-xl lg:text-2xl font-normal leading-normal">
+                                        We&apos;re not replacing doctors — we&apos;re <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">amplifying their impact</span> through <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-blue-500 bg-clip-text text-transparent font-semibold">intelligence that listens, learns, and supports</span>.
+                                    </p>
+                                    {/* Attribution */}
+                                    <div className="text-sm sm:text-base text-gray-600 font-medium">
+                                        — Dr. David Truong, MD
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -68,6 +67,12 @@ export default function TestimonialSection() {
                                 <div className="relative flex-shrink-0">
                                     <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-[1.5px] border-cyan-500 p-[1.5px]">
                                         <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                                            {/* Placeholder for Dr. David's photo - replace with image when available */}
+                                            {/* <img 
+                                                src="/images/dr-david-truong.jpg" 
+                                                alt="Dr. David Truong, MD"
+                                                className="w-full h-full object-cover rounded-full"
+                                            /> */}
                                             <div className="w-full h-full bg-gray-100 flex items-center justify-center">
                                                 <svg
                                                     className="w-10 h-10 sm:w-12 sm:h-12 text-gray-400"

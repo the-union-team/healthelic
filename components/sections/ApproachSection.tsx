@@ -41,7 +41,7 @@ export default function ApproachSection() {
                         </span>
                     </h2>
                     <p className="body text-gray-700 max-w-2xl mx-auto">
-                        Healthelic is more than a product — it&apos;s a full ecosystem of AI agents designed to transform healthcare at every level.
+                    Healthelic is a full ecosystem of AI agents designed to transform healthcare at every level.
                     </p>
                 </div>
 

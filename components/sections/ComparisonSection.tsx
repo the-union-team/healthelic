@@ -9,50 +9,43 @@ interface ComparisonRow {
 const comparisonData: ComparisonRow[] = [
   {
     feature: "Core Function",
-    conventionalAI: "Retrieves and summarizes information",
-    medicus:
-      "Interprets, reasons, and delivers context-aware, evidence-based recommendations",
+    conventionalAI: "Retrieves and summarizes",
+    medicus: "Interprets, reasons, and delivers evidence-based recommendations",
   },
   {
     feature: "User Experience",
-    conventionalAI: "Feels like chatting with a search engine",
-    medicus:
-      "Feels like collaborating with a trusted medical assistant who knows your case",
+    conventionalAI: "Chat-like search engine",
+    medicus: "Collaborative medical assistant",
   },
   {
     feature: "Intelligence Model",
-    conventionalAI: "Static, prompt-based replies",
-    medicus:
-      "Dynamic, agentic reasoning with adaptive learning and context retention",
+    conventionalAI: "Static, prompt-based",
+    medicus: "Dynamic reasoning with adaptive learning",
   },
   {
     feature: "Personalization",
-    conventionalAI: "Generic, guideline-only output",
-    medicus:
-      "Tailored to user profile, medical history, and conversation context",
+    conventionalAI: "Generic guidelines only",
+    medicus: "Tailored to profile and medical history",
   },
   {
     feature: "Integration",
-    conventionalAI: "Siloed, standalone systems",
-    medicus:
-      "Seamlessly connects with EHRs, telehealth, and clinical workflows",
+    conventionalAI: "Siloed systems",
+    medicus: "Seamless EHR and workflow integration",
   },
   {
     feature: "Actionability",
-    conventionalAI: "Ends at information",
-    medicus:
-      "Automates next steps — documentation, scheduling, follow-ups, or escalation",
+    conventionalAI: "Information only",
+    medicus: "Automates documentation and next steps",
   },
   {
     feature: "Trust & Oversight",
     conventionalAI: "Limited transparency",
-    medicus:
-      "Physician-guided validation and dual-AI fact-checking to eliminate hallucinations",
+    medicus: "Physician validation with dual-AI fact-checking",
   },
   {
     feature: "Compliance",
-    conventionalAI: "Basic privacy settings",
-    medicus: "Full HIPAA alignment and enterprise-grade governance",
+    conventionalAI: "Basic privacy",
+    medicus: "Full HIPAA and enterprise governance",
   },
 ];
 
@@ -89,13 +82,13 @@ export default function ComparisonSection() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b-2 border-gray-300">
-                  <th className="text-left py-4 px-6 font-bold text-gray-900 text-lg bg-white">
+                  <th className="text-left py-5 px-6 font-bold text-gray-900 text-lg bg-white">
                     Feature
                   </th>
-                  <th className="text-left py-4 px-6 font-bold text-gray-700 text-lg bg-gray-100">
+                  <th className="text-left py-5 px-6 font-bold text-gray-700 text-lg bg-gray-100">
                     Conventional AI Tools
                   </th>
-                  <th className="text-left py-4 px-6 font-bold text-lg bg-gradient-to-r from-purple-50 to-blue-50">
+                  <th className="text-left py-5 px-6 font-bold text-lg bg-gradient-to-r from-purple-50 to-blue-50">
                     <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                       Medicus by Healthelic
                     </span>
@@ -110,14 +103,44 @@ export default function ComparisonSection() {
                       index % 2 === 0 ? "bg-white" : "bg-gray-50"
                     }`}
                   >
-                    <td className="py-5 px-6 font-semibold text-gray-900 text-base">
+                    <td className="py-6 px-6 font-semibold text-gray-900 text-base">
                       {row.feature}
                     </td>
-                    <td className="py-5 px-6 text-gray-700 text-base">
-                      {row.conventionalAI}
+                    <td className="py-6 px-6 text-gray-700 text-base">
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                        <span>{row.conventionalAI}</span>
+                      </div>
                     </td>
-                    <td className="py-5 px-6 text-gray-900 text-base font-medium">
-                      {row.medicus}
+                    <td className="py-6 px-6 text-gray-900 text-base font-medium">
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span>{row.medicus}</span>
+                      </div>
                     </td>
                   </tr>
                 ))}
@@ -138,24 +161,54 @@ export default function ComparisonSection() {
                   {row.feature}
                 </h3>
               </div>
-              <div className="p-4 space-y-4">
+              <div className="p-5 space-y-5">
                 <div>
-                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
                     Conventional AI Tools
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    {row.conventionalAI}
-                  </p>
+                  <div className="flex items-start gap-3">
+                    <svg
+                      className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {row.conventionalAI}
+                    </p>
+                  </div>
                 </div>
-                <div className="pt-3 border-t border-gray-200">
-                  <div className="text-xs font-semibold uppercase tracking-wider mb-2">
+                <div className="pt-4 border-t border-gray-200">
+                  <div className="text-xs font-semibold uppercase tracking-wider mb-3">
                     <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                       Medicus by Healthelic
                     </span>
                   </div>
-                  <p className="text-gray-900 text-sm font-medium leading-relaxed">
-                    {row.medicus}
-                  </p>
+                  <div className="flex items-start gap-3">
+                    <svg
+                      className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <p className="text-gray-900 text-sm font-medium leading-relaxed">
+                      {row.medicus}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

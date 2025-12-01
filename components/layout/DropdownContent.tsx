@@ -17,46 +17,60 @@ export default function DropdownContent({
   if (featured && columns) {
     return (
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-80 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-6 lg:p-8 flex flex-col justify-between">
-          <div>
-            <h3 className="text-xl lg:text-2xl font-bold text-white mb-3 leading-tight">
-              {featured.title}
-            </h3>
-            <p className="text-white/90 text-sm leading-relaxed">
-              {featured.description}
-            </p>
+        {featured && (
+          <div className="w-full lg:w-64 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 p-5 lg:p-6 flex flex-col justify-between border-r border-indigo-500/20">
+            <div>
+              <h3 className="text-lg lg:text-xl font-bold text-white mb-2 leading-tight">
+                {featured.title}
+              </h3>
+              <p className="text-white/90 text-xs leading-relaxed line-clamp-3">
+                {featured.description}
+              </p>
+            </div>
+            <Link
+              href={featured.cta.href}
+              className="mt-4 inline-flex items-center gap-2 px-3 py-2 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 w-fit text-sm"
+              onClick={onItemClick}
+            >
+              {featured.cta.label}
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
-          <Link
-            href={featured.cta.href}
-            className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 w-fit"
-            onClick={onItemClick}
-          >
-            {featured.cta.label}
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-        <div className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        )}
+        <div className="flex-1 p-5 lg:p-6">
+          <div className={`grid grid-cols-1 sm:grid-cols-2 ${columns.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-x-6 gap-y-5`}>
             {columns.map((column, colIdx) => (
-              <div key={colIdx}>
-                <p className="text-xs font-semibold text-gray-500 uppercase mb-4 tracking-wider">
-                  {column.label}
-                </p>
-                <div className="space-y-3 lg:space-y-4">
+              <div key={colIdx} className={colIdx > 0 ? "border-l border-gray-200 pl-6" : ""}>
+                {column.href ? (
+                  <Link
+                    href={column.href}
+                    className="block group"
+                    onClick={onItemClick}
+                  >
+                    <h4 className="text-xs font-bold text-gray-900 uppercase mb-3 tracking-wider pb-2 border-b border-gray-200 group-hover:text-indigo-600 transition-colors cursor-pointer">
+                      {column.label}
+                    </h4>
+                  </Link>
+                ) : (
+                  <h4 className="text-xs font-bold text-gray-900 uppercase mb-3 tracking-wider pb-2 border-b border-gray-200">
+                    {column.label}
+                  </h4>
+                )}
+                <div className="space-y-2.5">
                   {column.items.map((colItem, itemIdx) => (
                     <Link
                       key={itemIdx}
                       href={colItem.href}
-                      className="block group"
+                      className="block group py-1"
                       onClick={onItemClick}
                     >
-                      <p className="font-semibold text-gray-900 group-hover:text-gray-700 transition-colors mb-1 text-sm lg:text-base">
+                      <p className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors text-sm mb-0.5">
                         {colItem.label}
                       </p>
                       {colItem.description && (
-                        <p className="text-xs lg:text-sm text-gray-600 leading-relaxed">
+                        <p className="text-xs text-gray-500 leading-snug line-clamp-2">
                           {colItem.description}
                         </p>
                       )}

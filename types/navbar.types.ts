@@ -21,6 +21,7 @@ export interface FeaturedSection {
 
 export interface Column {
   label: string;
+  href?: string;
   items: NavSubItem[];
 }
 

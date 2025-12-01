@@ -24,7 +24,7 @@ export default function HeroSection() {
               <Button
                 href="#beta"
                 variant="primary"
-                className="px-3.5 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base bg-blue-600 hover:bg-blue-700 text-white border-0 flex items-center gap-1.5 hover:shadow-blue-500/50 group"
+                className="px-3.5 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white border-0 flex items-center gap-1.5 hover:shadow-blue-500/50 group transition-all duration-300"
               >
                 Physician? Join Our Beta Program
                 <svg
@@ -53,7 +53,7 @@ export default function HeroSection() {
             </div>
 
             {/* Clinical Status Badge */}
-            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
+            {/* <div className="absolute top-3 right-3 sm:top-4 sm:right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
               <button className="px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold text-xs sm:text-sm md:text-base shadow-[0_0_25px_rgba(147,51,234,0.6)] hover:shadow-[0_0_35px_rgba(147,51,234,0.9)] hover:from-purple-700 hover:to-blue-700 transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 flex items-center gap-1.5 sm:gap-2 group backdrop-blur-sm border border-white/20">
                 <svg
                   className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:rotate-12"
@@ -72,7 +72,7 @@ export default function HeroSection() {
                   Analyzing...
                 </span>
               </button>
-            </div>
+            </div> */}
 
             {/* Main illustration container with enhanced styling */}
             <div className="relative w-full h-full flex items-center justify-center z-10">

@@ -18,7 +18,7 @@
       },
       "columns": [
         {
-          "label": "Medicus Features",
+          "label": "Core Features",
           "items": [
             {
               "label": "Medicus Features",
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "label": "Intelligence & Evidence",
+          "label": "Intelligence & Learning",
           "items": [
             {
               "label": "Evidence-Based Explanations",
@@ -54,12 +54,7 @@
               "label": "Continuous Learning",
               "href": "/features#continuous-learning",
               "description": "Every physician interaction improves Medicus' accuracy, context, and reasoning depth."
-            }
-          ]
-        },
-        {
-          "label": "Security & Compliance",
-          "items": [
+            },
             {
               "label": "Privacy and Compliance",
               "href": "/features#privacy-compliance",
@@ -72,13 +67,64 @@
     {
       "label": "How It Works",
       "href": "/how-it-works",
-      "type": "link"
+      "type": "dropdown",
+      "featured": {
+        "title": "How HealthElic Works",
+        "description": "Discover the intelligent process behind our AI-powered healthcare assistant",
+        "cta": {
+          "label": "Learn More →",
+          "href": "/how-it-works"
+        }
+      },
+      "columns": [
+        {
+          "label": "Process",
+          "items": [
+            {
+              "label": "Natural Language Understanding",
+              "href": "/how-it-works#natural-language",
+              "description": "Understands physician queries in natural language"
+            },
+            {
+              "label": "Context-Aware Responses",
+              "href": "/how-it-works#context-aware",
+              "description": "Uses patient context to tailor responses"
+            },
+            {
+              "label": "Free-Form Queries",
+              "href": "/how-it-works#free-form",
+              "description": "Ask anything, AI interprets intent and formats answers"
+            }
+          ]
+        },
+        {
+          "label": "Key Features",
+          "items": [
+            {
+              "label": "Chain-of-Thought Reasoning",
+              "href": "/how-it-works#chain-of-thought",
+              "description": "Explainability built in with transparent reasoning"
+            },
+            {
+              "label": "Evidence-Based Findings",
+              "href": "/how-it-works#evidence-based",
+              "description": "Verified references prevent hallucinations"
+            },
+            {
+              "label": "Adaptive Tone & Format",
+              "href": "/how-it-works#adaptive-format",
+              "description": "Adapts tone for patients or clinical use"
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Pricing",
       "href": "/pricing",
       "type": "link"
     },
+   
     {
       "label": "For Physicians",
       "href": "/physicians",
@@ -93,147 +139,54 @@
       },
       "columns": [
         {
-          "label": "By Specialty",
+          "label": "Features",
+          "href": "/physicians",
           "items": [
             {
-              "label": "Cardiology",
-              "href": "#cardiology",
-              "description": "Advanced cardiac care solutions"
+              "label": "Summarize Complex Patient Data",
+              "href": "/physicians",
+              "description": "Transform lengthy patient records into concise, actionable summaries"
             },
             {
-              "label": "Primary Care",
-              "href": "#primary-care",
-              "description": "Comprehensive primary healthcare tools"
+              "label": "Prepare Documentation",
+              "href": "/physicians",
+              "description": "Generate comprehensive visit notes and clinical documentation"
             },
             {
-              "label": "Emergency Medicine",
-              "href": "#emergency-medicine",
-              "description": "Rapid response and critical care"
+              "label": "Evidence-Based Recommendations",
+              "href": "/physicians",
+              "description": "Receive clinical recommendations backed by peer-reviewed research"
             },
             {
-              "label": "Pediatrics",
-              "href": "#pediatrics",
-              "description": "Specialized care for children"
-            },
-            {
-              "label": "Other Specialties",
-              "href": "#specialties",
-              "description": "Solutions for all medical fields"
+              "label": "Enhance Communication",
+              "href": "/physicians",
+              "description": "Improve patient communication and team coordination"
             }
           ]
         },
         {
-          "label": "By Use Case",
+          "label": "Resources",
+          "href": "/resources",
           "items": [
             {
-              "label": "Emergency",
-              "href": "#emergency",
-              "description": "Critical care when it matters most"
+              "label": "Learn",
+              "href": "/resources#learn",
+              "description": "Tutorials, explainer videos, and practical guides"
             },
             {
-              "label": "Clinic",
-              "href": "#clinic",
-              "description": "Streamline daily operations"
-            },
-            {
-              "label": "Research",
-              "href": "#research",
-              "description": "Advanced analytics for medical research"
-            },
-            {
-              "label": "Telemedicine",
-              "href": "#telemedicine",
-              "description": "Remote patient care solutions"
-            }
-          ]
-        },
-        {
-          "label": "By Practice",
-          "items": [
-            {
-              "label": "Solo Practice",
-              "href": "#solo",
-              "description": "Tools for independent physicians"
-            },
-            {
-              "label": "Group Practice",
-              "href": "#group",
-              "description": "Collaborative care management"
-            },
-            {
-              "label": "Hospital",
-              "href": "#hospital",
-              "description": "Enterprise healthcare solutions"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "Resources",
-      "href": "/resources",
-      "type": "dropdown",
-      "featured": {
-        "title": "Resources to support your journey",
-        "description": "Access guides, insights, and support to maximize your HealthElic experience",
-        "cta": {
-          "label": "View All Resources →",
-          "href": "#resources"
-        }
-      },
-      "columns": [
-        {
-          "label": "Learn",
-          "items": [
-            {
-              "label": "Blog",
-              "href": "#blog",
-              "description": "Latest insights and healthcare trends"
+              "label": "Blogs",
+              "href": "/resources#blogs",
+              "description": "Insights from our medical and AI teams"
             },
             {
               "label": "Case Studies",
-              "href": "#case-studies",
-              "description": "Real-world success stories"
+              "href": "/resources#case-studies",
+              "description": "Real-world results from physicians and clinics"
             },
             {
               "label": "Clinical Validation",
-              "href": "#clinical-validation",
-              "description": "Evidence-based research and studies"
-            }
-          ]
-        },
-        {
-          "label": "Support",
-          "items": [
-            {
-              "label": "Help Center",
-              "href": "#help-center",
-              "description": "Comprehensive guides and tutorials"
-            },
-            {
-              "label": "FAQs",
-              "href": "#faqs",
-              "description": "Answers to common questions"
-            },
-            {
-              "label": "Documentation",
-              "href": "#docs",
-              "description": "Technical documentation and API reference"
-            }
-          ]
-        },
-        {
-          "label": "Community",
-          "items": [
-            {
-              "label": "Webinars",
-              "href": "#webinars",
-              "description": "Live training and expert sessions"
-            },
-            {
-              "label": "Events",
-              "href": "#events",
-              "description": "Conferences and networking opportunities"
+              "href": "/resources#clinical-validation",
+              "description": "Peer-reviewed studies demonstrating Medicus accuracy"
             }
           ]
         }
@@ -256,18 +209,18 @@
           "label": "Company",
           "items": [
             {
+              "label": "Company",
+              "href": "/about#company",
+              "description": "HealthElic develops intelligent, secure, and compassionate AI systems"
+            },
+            {
               "label": "Mission",
-              "href": "#mission",
+              "href": "/about#mission",
               "description": "Our vision for healthcare transformation"
             },
             {
-              "label": "Team",
-              "href": "#team",
-              "description": "Meet the people behind HealthElic"
-            },
-            {
               "label": "Careers",
-              "href": "#careers",
+              "href": "/about#careers",
               "description": "Join us in revolutionizing healthcare"
             }
           ]
@@ -276,34 +229,19 @@
           "label": "Expertise",
           "items": [
             {
+              "label": "Expertise",
+              "href": "/about#expertise",
+              "description": "Decades of experience across clinical medicine and AI"
+            },
+            {
               "label": "Medical Advisory Board",
-              "href": "#advisory-board",
+              "href": "/about#advisory-board",
               "description": "Leading healthcare experts guiding our mission"
             },
             {
               "label": "Partners",
-              "href": "#partners",
+              "href": "/about#partners",
               "description": "Trusted healthcare organizations"
-            }
-          ]
-        },
-        {
-          "label": "Connect",
-          "items": [
-            {
-              "label": "Contact",
-              "href": "/contact",
-              "description": "Get in touch with our team"
-            },
-            {
-              "label": "Press",
-              "href": "#press",
-              "description": "Media resources and news"
-            },
-            {
-              "label": "Newsletter",
-              "href": "#newsletter",
-              "description": "Stay updated with latest news"
             }
           ]
         }
@@ -312,13 +250,7 @@
   ],
   "actions": [
     {
-      "label": "Login",
-      "href": "#login",
-      "type": "link",
-      "hiddenOnMobile": true
-    },
-    {
-      "label": "Contact sales",
+      "label": "Contact a specialist",
       "href": "/contact",
       "type": "button",
       "variant": "outline",
@@ -332,4 +264,5 @@
     }
   ]
 }
+
 

@@ -26,7 +26,7 @@ export default function PhysiciansHero() {
               <Button
                 href="#beta-signup"
                 variant="primary"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white border-0 transition-all duration-300"
               >
                 Join the Medicus Beta for Physicians
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

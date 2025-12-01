@@ -53,13 +53,13 @@ export default function Header() {
   return (
     <div className="sticky top-0 z-50 pt-4 px-4 sm:px-6 lg:px-8 max-w-[95%] mx-auto" id="navbar-container">
       <header className="max-w-[1500px] mx-auto bg-white rounded-xl md:rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300">
-        <nav className="px-4 sm:px-6 lg:px-8 relative">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-8">
+        <nav className="px-4 sm:px-6 relative overflow-hidden">
+          <div className="flex items-center justify-between h-16 min-w-0">
+            <div className="flex items-center gap-4 min-w-0 flex-1">
               <Logo href={navbarData.logo.href} text={navbarData.logo.text} />
               <MobileMenuButton isOpen={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} />
 
-              <div className="hidden lg:flex items-center gap-2">
+              <div className="hidden lg:flex items-center min-w-0">
                 {(navbarData.navItems as NavItem[]).map((item, idx) => {
                   if (item.type === 'dropdown') {
                     return (
@@ -83,7 +83,7 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center gap-4 ml-12">
+            <div className="hidden md:flex items-center gap-4 ml-auto flex-shrink-0">
               {(navbarData.actions as NavItem[]).map((action, idx) => {
                 if (action.type === 'button') {
                   return (

@@ -70,6 +70,17 @@ export default function Dropdown({
     (subItem) => "type" in subItem && subItem.type === "group"
   );
   const hasRichLayout = featured && columns;
+  
+  // Calculate dropdown width based on number of columns
+  const columnCount = columns?.length || 0;
+  const getDropdownWidth = () => {
+    if (columnCount >= 4) {
+      return "w-[min(calc(100vw-2rem),72rem)] max-w-6xl";
+    } else if (columnCount === 3) {
+      return "w-[min(calc(100vw-2rem),64rem)] max-w-5xl";
+    }
+    return "w-[min(calc(100vw-2rem),56rem)] max-w-4xl";
+  };
 
   return (
     <div
@@ -97,7 +108,7 @@ export default function Dropdown({
         </button>
       )}
       {isOpen && (
-        <div className="hidden lg:block fixed top-20 left-1/2 -translate-x-1/2 z-50 w-[min(calc(100vw-2rem),80rem)] max-w-7xl">
+        <div className={`hidden lg:block fixed top-20 left-1/2 -translate-x-1/2 z-50 ${getDropdownWidth()}`}>
           <div
             className="bg-white border border-gray-200 rounded-xl shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200 overflow-hidden w-full mt-2 max-h-[calc(100vh-6rem)] overflow-y-auto"
             onMouseEnter={handleMouseEnter}

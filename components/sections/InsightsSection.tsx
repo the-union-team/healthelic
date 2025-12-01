@@ -179,8 +179,7 @@ export default function InsightsSection() {
 
             {/* Closing Statement */}
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed italic">
-              Medicus isn&apos;t just AI — it&apos;s health intelligence with
-              empathy, accuracy, and heart.
+              Medicus is health intelligence with empathy, accuracy, and heart.
             </p>
 
             {/* Button */}
@@ -188,7 +187,7 @@ export default function InsightsSection() {
               <Button
                 href="#beta"
                 variant="primary"
-                className="inline-flex items-center gap-2 group"
+                className="inline-flex items-center gap-2 group bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white border-0 transition-all duration-300"
               >
                 Join the Beta Program
                 <svg
